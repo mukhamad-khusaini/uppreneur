@@ -1,0 +1,92 @@
+.editor {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editor form {
+    width: 100%;
+}
+
+.editor form .alert {
+    width: 80%;
+    display: none;
+}
+
+.editor form input#title {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editor form input#title::placeholder {
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.editor form input[type="file"] {
+    display: none;
+}
+
+.editor form input[type="date"] {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editor form #handleEditor {
+    width: 100%;
+    min-height: 20rem;
+    background-color: white;
+    border: 0.1rem solid var(--green-dark);
+    border-radius: 0.8rem;
+}
+
+.editor form .imgCont {
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    background-image: url("/img/no-pictures.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editor form .input-group {
+    width: 80%;
+}
+
+.editor form > h3 {
+    font-weight: 600;
+}
+
+.editor form .codex-editor .ce-paragraph {
+    text-align: left;
+}
+
+.editor form .codex-editor h2 {
+    font-weight: 600;
+}
+
+form .image-tool__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form img.image-tool__image-picture {
+    width: 80%;
+}
+
+form .image-tool__caption {
+    text-align: center;
+}
+
+.editor form .ce-paragraph {
+    margin-bottom: 0.7rem;
+}
+
+.editor form button.editorSubmit {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}

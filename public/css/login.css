@@ -1,0 +1,45 @@
+.login {
+    height: 80vh;
+    background-color: var(--yellow-light);
+    font-family: "poppins", sans-serif;
+}
+
+.login .alert {
+    display: none;
+}
+
+.login h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.login form {
+    width: 100%;
+}
+
+.login form input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.login form button {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}
+
+.login h4 {
+    font-size: 0.9rem;
+}
+
+.login img {
+    width: 7rem;
+    cursor: pointer;
+}
+
+.login h4 span {
+    padding: 0.3rem 0.7rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border-radius: 0.3rem;
+}

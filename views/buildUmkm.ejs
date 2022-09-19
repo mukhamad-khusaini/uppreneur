@@ -1,0 +1,81 @@
+<%- include("./templates/header") %> 
+<div class="buildumkm d-flex flex-column align-items-center justify-content-center">
+    <h1 class="mb-4">Build UMKM</h1>
+    <!-- wawasan -->
+    <div class="buWawasan rounded-4 d-flex flex-column p-4 mb-5" data-bs-toggle="modal" data-bs-target="#buwawasan">
+        <img src="/img/wawasan.png" alt="Wawasan">
+        <h2>Wawasan</h2>
+        <p>Perkaya wawasan kewirausahaan anda</p>
+    </div>
+    <!-- wawasan modal -->
+    <div class="modal fade" id="buwawasan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wawasan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-primary btn-lg">Pemasaran</button>
+                <button type="button" class="btn btn-primary btn-lg">Keuangan</button>
+                <button type="button" class="btn btn-primary btn-lg">Sumber Daya Manusia</button>
+                <button type="button" class="btn btn-primary btn-lg">Operasional</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Kelas pelatihan -->
+    <div class="buKelasPelatihan rounded-4 d-flex flex-column p-4 mb-5" data-bs-toggle="modal" data-bs-target="#bupelatihan">
+        <img src="/img/kelasPelatihan.png" alt="Wawasan">
+        <h2>Kelas Pelatihan</h2>
+        <p>Ikuti kelas-kelas pelatihan dengan tutor yang ahli</p>
+    </div>
+    <!-- kelas pelatihan modal -->
+    <div class="modal fade" id="bupelatihan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kelas Pelatihan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-primary btn-lg" id="all">Semua</button>
+                <button type="button" class="btn btn-primary btn-lg">Pemasaran</button>
+                <button type="button" class="btn btn-primary btn-lg">Keuangan</button>
+                <button type="button" class="btn btn-primary btn-lg">Sumber Daya Manusia</button>
+                <button type="button" class="btn btn-primary btn-lg">Operasional</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Program kami -->
+    <div class="buProgramKami rounded-4 d-flex flex-column p-4 mb-5" data-bs-toggle="modal" data-bs-target="#buprogram">
+        <img src="/img/programKami.png" alt="Wawasan">
+        <h2>Program Kami</h2>
+        <p>Ikuti program-program yang kami selenggarakan</p>
+    </div>
+    <!-- Program kami modal -->
+    <div class="modal fade" id="buprogram" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Program Kami</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <button type="button" class="btn btn-primary btn-lg">FDG</button>
+                <button type="button" class="btn btn-primary btn-lg">Konsultasi</button>
+                <button type="button" class="btn btn-primary btn-lg">Pendanaan</button>
+                <button type="button" class="btn btn-primary btn-lg">Webinar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Tentang kami -->
+    <div onclick="aboutRedirect()" class="buTentangKami rounded-4 d-flex flex-column p-4 mb-5">
+        <img src="/img/tentangKami.png" alt="Wawasan">
+        <h2>Tentang Kami</h2>
+        <p>Kenalan dengan kami lebih jauh</p>
+    </div>
+</div>
+<%- include("./templates/footer") %> 

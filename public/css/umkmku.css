@@ -1,0 +1,139 @@
+.umkmku {
+    height: 160vh;
+}
+
+.umkmku > h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.kuWawasan {
+    cursor: pointer;
+    width: 20rem;
+    height: 15.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.kuWawasan img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.kuWawasan h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.kuWawasan p {
+    font-size: 0.8rem;
+}
+
+.kuKelasPelatihan {
+    cursor: pointer;
+    width: 20rem;
+    height: 17.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.kuKelasPelatihan img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.kuKelasPelatihan h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.kuKelasPelatihan p {
+    font-size: 0.8rem;
+}
+
+.kuProgramKami {
+    cursor: pointer;
+    width: 20rem;
+    height: 16.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.kuProgramKami img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.kuProgramKami h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.kuProgramKami p {
+    font-size: 0.8rem;
+}
+
+.kuTentangKami {
+    cursor: pointer;
+    width: 20rem;
+    height: 16.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.kuTentangKami img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.kuTentangKami h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.kuTentangKami p {
+    font-size: 0.8rem;
+}
+
+.umkmku #kuwawasan .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.umkmku #kupelatihan .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.umkmku #kuprogram .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.umkmku #kupelatihan .modal-body #all {
+    background-color: transparent;
+    border: 0.1rem solid var(--green-dark);
+    color: var(--green-dark);
+}

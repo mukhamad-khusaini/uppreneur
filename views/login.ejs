@@ -1,0 +1,17 @@
+<%- include("./templates/header") %> 
+<div class="login px-4 py-4 d-flex flex-column justify-content-center align-items-start">
+    
+    <h1 class="mb-3">Masuk ke akun anda :</h1>
+    <form class="d-flex flex-column align-items-center" action="/auth" method="POST">
+        <input class="d-block mb-4 px-4 py-3 rounded-2" type="email" name="email" id="email" placeholder="Email" required>
+        <input class="d-block mb-4 px-4 py-3 rounded-2" type="password" name="pass" id="pass" placeholder="Password" required>
+        <div class="alert alert-danger align-self-center" role="alert">
+            Password Anda Salah
+        </div>
+        <button type="submit" class="btn btn-lg px-5">Masuk</button>
+    </form>
+    <h4 class="align-self-center my-4">Atau masuk dengan akun google</h4>
+    <img onclick="redirect()" class="d-block align-self-center" src="/img/google.png" alt="google">
+    <h4 class="align-self-center mt-5">Belum punya akun? <span onclick="signUpRedirect()">Buat disini</span></h4>
+</div>
+<%- include("./templates/footer") %> 

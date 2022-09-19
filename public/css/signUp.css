@@ -1,0 +1,77 @@
+.signUp {
+    height: 150vh;
+    background-color: var(--yellow-light);
+    font-family: "poppins", sans-serif;
+}
+
+.signUp p {
+    font-size: 0.8rem;
+}
+
+.signUp img {
+    width: 7rem;
+    cursor: pointer;
+}
+
+.signUp h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.signUp .dataAkun {
+    width: 100%;
+}
+
+.signUp .dataAkun h4 {
+    width: 40%;
+    font-size: 1rem;
+}
+
+.signUp .dataAkun hr {
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+}
+
+.signUp form {
+    width: 100%;
+}
+
+.signUp form input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.signUp .dataUsaha {
+    width: 100%;
+}
+
+.signUp .dataUsaha h4 {
+    width: 50%;
+    font-size: 1rem;
+}
+
+.signUp .dataUsaha hr {
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+}
+
+.signUp form select {
+    width: auto;
+    outline: none;
+    border: none;
+}
+
+.signUp form h5 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.63);
+    background-color: white;
+}
+
+.signUp form button {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    font-weight: 600;
+}

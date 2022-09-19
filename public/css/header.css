@@ -1,0 +1,27 @@
+:root {
+    --green-dark: #4e944f;
+    --green-light: #b4e197;
+    --green-semiLight: #83bd75;
+    --yellow-light: #e9efc0;
+}
+
+body {
+    background-image: url("/img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 4rem;
+}
+
+img {
+    width: 2rem;
+}
+
+a {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

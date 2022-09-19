@@ -1,0 +1,139 @@
+.buildumkm {
+    height: 160vh;
+}
+
+.buildumkm > h1 {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buWawasan {
+    cursor: pointer;
+    width: 20rem;
+    height: 15.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.buWawasan img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.buWawasan h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.buWawasan p {
+    font-size: 0.8rem;
+}
+
+.buKelasPelatihan {
+    cursor: pointer;
+    width: 20rem;
+    height: 17.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.buKelasPelatihan img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.buKelasPelatihan h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.buKelasPelatihan p {
+    font-size: 0.8rem;
+}
+
+.buProgramKami {
+    cursor: pointer;
+    width: 20rem;
+    height: 16.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.buProgramKami img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.buProgramKami h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.buProgramKami p {
+    font-size: 0.8rem;
+}
+
+.buTentangKami {
+    cursor: pointer;
+    width: 20rem;
+    height: 16.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.buTentangKami img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.buTentangKami h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.buTentangKami p {
+    font-size: 0.8rem;
+}
+
+.buildumkm #buwawasan .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.buildumkm #bupelatihan .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.buildumkm #buprogram .modal-body button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    border: none;
+}
+
+.buildumkm #bupelatihan .modal-body #all {
+    background-color: transparent;
+    border: 0.1rem solid var(--green-dark);
+    color: var(--green-dark);
+}

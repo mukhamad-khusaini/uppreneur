@@ -1,0 +1,35 @@
+.about {
+    min-height: 80vh;
+    font-family: "poppins", sans-serif;
+}
+
+.about .label {
+    font-size: 1.2rem;
+    background-color: var(--green-semiLight);
+    color: var(--yellow-light);
+}
+
+.about > p {
+    font-size: 0.8rem;
+}
+
+.about h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.about .emailCont img {
+    width: 1.5rem;
+}
+
+.about .emailCont p {
+    font-size: 0.9rem;
+}
+
+.about .waCont img {
+    width: 1.5rem;
+}
+
+.about .waCont p {
+    font-size: 0.9rem;
+}

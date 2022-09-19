@@ -1,0 +1,27 @@
+footer {
+    overflow: hidden;
+}
+
+footer .foot {
+    height: 10rem;
+    background-image: url("/img/bgFoot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+footer .foot h3 {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+footer .foot div img {
+    width: 1rem;
+    display: block;
+}
+
+footer .foot div p {
+    margin: 0;
+}

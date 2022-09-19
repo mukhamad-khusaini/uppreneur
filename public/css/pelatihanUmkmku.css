@@ -1,0 +1,54 @@
+.pelatihanUmkmku {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.pelatihanUmkmku .signPelatihanUmkmku {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.pelatihanUmkmku .signPelatihanUmkmku h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.pelatihanUmkmku .moduleCont .mainCard {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--green-dark);
+    color: white;
+}
+
+.pelatihanUmkmku .moduleCont .mainCard img {
+    width: 4rem;
+}
+
+.pelatihanUmkmku .moduleCont .mainCard h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pelatihanUmkmku .moduleCont .mainCard p {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.pelatihanUmkmku .moduleCont .moduleCard {
+    width: 100%;
+    min-height: 6rem;
+    background-color: white;
+    color: var(--green-dark);
+}
+
+.pelatihanUmkmku .moduleCont .moduleCard h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pelatihanUmkmku .moduleCont .moduleCard .progress-bar {
+    background-color: var(--green-dark);
+}

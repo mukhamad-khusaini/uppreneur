@@ -1,0 +1,46 @@
+<%- include("./templates/header") %>
+<% let dataArc = JSON.parse(datas.articleData) %> 
+<div class="articleWawasanUmkmku d-flex flex-column align-items-start mb-4">
+    <div class="signUmkmku d-flex align-items-center justify-content-center">
+        <h1 class="m-0">Wawasan UMKMKu</h1>
+    </div>
+    <div class="innerArc px-4">
+        <h1 class="title my-4"><%= datas.title %></h1>
+        <div class="arcData d-flex align-items-center justify-content-between">
+            <h3 class="bidang px-4 py-1 m-0"><%= datas.bidang %></h3>
+            <h3 class="tanggal m-0"><%= new Date(datas.date).toLocaleString('id-ID', { day: 'numeric', year: 'numeric', month: 'long',  }) %></h3>
+        </div>
+        <hr>
+        <div class="theArc d-flex flex-column align-items-start">
+            <img class="d-block rounded-4 align-self-center" src="<%= datas.coverImg %>" alt="cover">
+            <p class="caption align-self-center my-2">Cover Image</p>
+            <% for( let index = 0; index < dataArc.blocks.length; index++ ) { %>
+                <% if (dataArc.blocks[index].type === "header") { %>
+                    <% if (dataArc.blocks[index].data.level == 2) { %>
+                        <h2><%= dataArc.blocks[index].data.text %></h2>
+                    <% } else if (dataArc.blocks[index].data.level == 3) { %>
+                        <h3><%= dataArc.blocks[index].data.text %></h3>
+                    <% } else if (dataArc.blocks[index].data.level == 4) { %>
+                        <h4><%= dataArc.blocks[index].data.text %></h4>
+                    <% } %>
+                <% } else if (dataArc.blocks[index].type === "paragraph") { %>
+                    <p><%= dataArc.blocks[index].data.text %></p>
+                <% } else if (dataArc.blocks[index].type === "delimiter") { %>
+                    <h5 class="align-self-center">* * *</h5>
+                <% } else if (dataArc.blocks[index].type === "image") { %>
+                    <img class="d-block rounded-4 align-self-center" src="<%= dataArc.blocks[index].data.file.url %> " alt="cov">
+                    <p class="caption align-self-center my-2"><%= dataArc.blocks[index].data.caption %></p>
+                <% } %> 
+            <% } %>
+            <!--<h2>Apa Bedanya ?</h2>
+            <p>Sed orci arcu, tempor quis felis et, euismod imperdiet ante. Nunc feugiat elit erat, ac efficitur arcu dignissim at. Nullam posuere lectus at volutpat accumsan. Sed sit amet egestas magna. Morbi vehicula quis augue eu varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer at urna maximus, fermentum erat in, accumsan nisl. Sed ullamcorper orci dignissim augue efficitur, a eleifend quam sagittis. Sed maximus interdum gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dignissim consequat nibh varius interdum. Phasellus ut enim non libero congue gravida et sed diam. Phasellus ac porttitor ipsum. Curabitur vestibulum sodales auctor. Quisque gravida, dui eget consequat faucibus, odio augue feugiat urna, non congue dui leo non diam.</p>
+            <h2>Siapa Pelaku ?</h2>
+            <p>Suspendisse hendrerit ligula sed tortor viverra efficitur. Phasellus rhoncus, purus et accumsan pretium, sem augue pretium leo, vel mattis mi nisi at diam. Maecenas aliquet mauris vel euismod ultricies. Pellentesque nec purus et diam auctor sodales ut id felis. Nunc diam lectus, laoreet interdum nisi vel, sollicitudin fringilla purus. Aliquam porttitor consequat nulla, nec hendrerit massa molestie in. Fusce ac lacinia sapien. Etiam sed ligula bibendum, ornare lorem sit amet, condimentum ipsum. Nulla porta sem eget lorem pellentesque, ac sollicitudin augue gravida. Donec ornare lorem sit amet elit pharetra tristique. Pellentesque vel arcu a est dictum rhoncus vitae vel nisi. Quisque egestas orci orci, quis auctor sem euismod sit amet. Quisque sit amet aliquet lectus.</p>
+            <h2>Apa Motifnya ?</h2>
+            <img class="d-block rounded-4 align-self-center" src="/img/cov.jpg" alt="cov">
+            <p class="caption align-self-center my-2">pinterest.com</p>
+            <p>Nullam elit orci, rhoncus sed posuere non, fermentum eu mauris. Sed id tincidunt nisi. Duis aliquam urna diam, sit amet hendrerit nisl faucibus in. Sed hendrerit tempus nisi, vel facilisis ex ultricies quis. Nunc quis rhoncus risus. Sed id tortor mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla non rhoncus elit. Vivamus molestie imperdiet nisi, sed sodales elit sagittis vel. Phasellus convallis risus non nibh hendrerit feugiat. Integer eu aliquam justo, vitae lobortis nunc. Ut ut augue eu mi fermentum hendrerit.</p> -->
+        </div>
+    </div>
+</div>
+<%- include("./templates/footer") %> 

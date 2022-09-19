@@ -1,0 +1,34 @@
+<%- include("./templates/header") %> 
+<div class="editor ">
+    <form class="d-flex flex-column align-items-center" action="/input" method="POST" id="formArc">
+        <div class="alert alert-success" role="alert" id="success">
+            Artikel berhasil disimpan <a href="/umkmku/umkmKuWawasan" class="alert-link">kembali ke wawasan</a>
+        </div>
+        <div class="alert alert-danger" role="alert" id="failed">
+            A simple danger alert—check it out!
+        </div>
+        <h3 class="mt-3">Title :</h3>
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="title" id="title" placeholder="Masukan Judul ..." required>
+        <h3>Cover here:</h3>
+        <div id="imgCont" class="imgCont mb-4"></div>
+        <h3>Date :</h3>
+        <input class="d-block mt-2 mb-5 px-4 py-3 rounded-2" type="date" name="date" id="date">
+        <h3 class="mb-2">Bidang :</h3>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Bidang</label>
+            <select class="form-select" id="inputGroupSelect01" name="bidang">
+                <option value="Pemasaran" selected>Pemasaran</option>
+                <option value="Keuangan">Keuangan</option>
+                <option value="SDA">Sumber Daya Manusia</option>
+                <option value="Operasional">Operasional</option>
+            </select>
+        </div>
+        <input type="file" accept="image/*" name="coverImg" id="coverImg">
+
+        <div class="p-4 mb-4" id="handleEditor">
+
+        </div>
+        <button class="editorSubmit btn mb-4" type="button" id="editorSubmit">Submit</button>
+    </form>
+</div>
+<%- include("./templates/footer") %> 

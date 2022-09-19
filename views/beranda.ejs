@@ -1,0 +1,17 @@
+<%- include("./templates/header") %> 
+<div class="beranda px-md-3 d-flex flex-column align-items-center">
+    <h1 class="text-center m-0">Menu Pilihan :</h1>
+    <!-- build umkm -->
+    <div onclick="buildUmkmRedirect()" class="buildUmkm rounded-4 d-flex flex-column p-4">
+        <img src="/img/buildUmkm.png" alt="build UMKM">
+        <h2>Build UMKM</h2>
+        <p>Mulai bangun usahamu</p>
+    </div>
+    <!-- umkmku -->
+    <div onclick="umkmKuRedirect()" class="umkmKu rounded-4 d-flex flex-column p-4 mt-5">
+        <img src="/img/umkmKu.png" alt="build UMKM">
+        <h2>UMKMKu</h2>
+        <p>Kelola usahamu</p>
+    </div>
+</div>
+<%- include("./templates/footer") %> 

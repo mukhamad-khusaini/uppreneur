@@ -1,0 +1,60 @@
+.beranda {
+    height: 90vh;
+}
+
+.beranda h1 {
+    padding: 2rem 0;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.beranda .buildUmkm {
+    cursor: pointer;
+    width: 14rem;
+    height: 15.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.beranda .buildUmkm img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.beranda .buildUmkm h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.beranda .buildUmkm p {
+    font-size: 0.8rem;
+}
+
+.beranda .umkmKu {
+    cursor: pointer;
+    width: 14rem;
+    height: 15.5rem;
+    background-color: var(--green-dark);
+    box-shadow: 0.7rem 0.7rem 0 var(--green-light);
+    font-family: poppins, sans-serif;
+    color: var(--yellow-light);
+}
+
+.beranda .umkmKu img {
+    width: 8rem;
+    display: block;
+    align-self: center;
+}
+
+.beranda .umkmKu h2 {
+    font-weight: 600;
+    margin: 2.3rem 0 0 0;
+}
+
+.beranda .umkmKu p {
+    font-size: 0.8rem;
+}
