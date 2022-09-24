@@ -1,4 +1,4 @@
-const BASE_URL = "https://uppreanur.herokuapp.com"; //https://uppreanur.herokuapp.com
+const BASE_URL = "https://uppreneur.herokuapp.com"; //https://uppreanur.herokuapp.com
 
 if (window.location.pathname == "/login") {
     if (document.cookie.split("=")[0] === "token") {
