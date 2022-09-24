@@ -1,0 +1,100 @@
+.editorUmkmkuPendanaan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorUmkmkuPendanaan .sign-editorUmkmkuPendanaan {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.editorUmkmkuPendanaan .sign-editorUmkmkuPendanaan h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.editorUmkmkuPendanaan form {
+    width: 100%;
+}
+
+.editorUmkmkuPendanaan form .pendanaanUmkmkuPamf {
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    background-image: url("/img/no-pictures.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorUmkmkuPendanaan form input[type="file"] {
+    display: none;
+}
+
+.editorUmkmkuPendanaan form input#pendanaanTitle {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuPendanaan form textarea {
+    width: 80%;
+    min-height: 10rem;
+    outline: none;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorUmkmkuPendanaan form .skCont {
+    width: 100%;
+}
+
+.editorUmkmkuPendanaan form .skCont h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.editorUmkmkuPendanaan form .skCont input#sk {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuPendanaan form .alurCont {
+    width: 100%;
+}
+
+.editorUmkmkuPendanaan form .alurCont h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.editorUmkmkuPendanaan form .alurCont input#alur {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuPendanaan form input#pendanaanLink {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuPendanaan form button {
+    background-color: var(--green-dark);
+    border: none;
+    width: 80%;
+}
+
+@media only screen and (min-width: 512px) {
+    .editorUmkmkuPendanaan {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

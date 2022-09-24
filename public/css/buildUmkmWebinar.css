@@ -1,0 +1,14 @@
+.buildUmkmWebinar {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.buildUmkmWebinar > h1 {
+    font-size: 1.5rem;
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+.buildUmkmWebinar .card .date {
+    color: var(--green-semiLight);
+}

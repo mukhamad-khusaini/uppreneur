@@ -1,0 +1,50 @@
+<%- include("./templates/header") %> 
+<div class="buildUmkmModule d-flex flex-column">
+    <div class="sign-buildUmkmModule d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Pelatihan Build Umkm</h1>
+    </div>
+    <div class="moduleTitle align-self-center d-flex justify-content-center align-items-center p-3 shadow">
+        <h1 class="m-0"><%= data.data.moduleTitle %></h1>
+    </div>
+    <div class="moduleDesc p-4 mb-4 align-self-center shadow d-flex justify-content-start align-items-center">
+        <p class="m-0"><%= data.data.moduleDesc %> </p>
+    </div>
+    <div class="moduleCont align-self-center d-flex flex-column align-items-center">
+        <% let videoCount = 0 %>
+        <% let textCount = 0 %>
+        <% let linkCount = 0 %>
+        <% let scheme = data.data.scheme %>
+        <% for( let i = 0; i < scheme.length; i++ ) { %>
+            <% if (scheme[i] === "text") { %>
+                <div class="mod shadow rounded-4 p-4 mb-4 d-flex flex-column align-items-start">
+                    <div class="num rounded-circle d-flex justify-content-center align-items-center mb-2 align-self-end"><%= i+1 %> </div>
+                    <h2 class="my-2"><%= data.data.textTitle[textCount] %></h2>
+                    <p class="mb-3"><%= data.data.textDesc[textCount] %></p>
+                    <!-- <button type="button" onclick="textAdd(`<%= textCount %>|<%= data.bidang %>|<%= data._id %>`)" class="btn btn-outline-success done">Tandai Selesai</button> -->
+                </div>
+                <% textCount += 1 %> 
+            <% } else if (scheme[i] === "video") { %>
+                <div class="mod shadow rounded-4 p-4 mb-4 d-flex flex-column align-items-start">
+                    <div class="num rounded-circle d-flex justify-content-center align-items-center mb-2 align-self-end"><%= i+1 %></div>
+                    <video class="align-self-center mb-4" preload="auto" controls>
+                        <source src="https://drive.google.com/uc?export=download&id=<%= data.data.videoLink[videoCount] %>" type="video/mp4">
+                    </video>
+                    <h2 class="m-0"><%= data.data.videoTitle[videoCount] %></h2>
+                    <p class="my-3"><%= data.data.videoDesc[videoCount] %></p>
+                    <!-- <button type="button" class="btn btn-outline-success done">Tandai Selesai</button> -->
+                    <% videoCount += 1 %> 
+                </div>
+            <% } else if (scheme[i] === "link") { %>
+                <div class="mod shadow rounded-4 p-4 mb-4 d-flex flex-column align-items-start">
+                    <div class="num rounded-circle d-flex justify-content-center align-items-center mb-2 align-self-end"><%= i+1 %></div>
+                    <h2 class="my-2"><%= data.data.linkTitle[linkCount] %></h2>
+                    <p class="my-2"><%= data.data.linkDesc[linkCount] %></p>
+                    <a class="mb-3" href="<%= data.data.linkList[linkCount] %>"><%= data.data.linkList[linkCount] %></a>
+                    <!-- <button type="button" class="btn btn-outline-success done ">Tandai Selesai</button> -->
+                    <% linkCount += 1 %> 
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+</div>
+<%- include("./templates/footer") %> 

@@ -1,0 +1,107 @@
+.editorPelatihan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorPelatihan .sign-editorPelatihan {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.editorPelatihan .sign-editorPelatihan h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.editorPelatihan form {
+    width: 100%;
+}
+
+.editorPelatihan form .moduleTitle {
+    width: 95%;
+
+    border-radius: 0.9rem 0.9rem 0 0;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}
+
+.editorPelatihan form .moduleTitle input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.editorPelatihan form .moduleDesc {
+    border-radius: 0 0 0.9rem 0.9rem;
+    width: 95%;
+    background-color: white;
+}
+
+.editorPelatihan form .moduleDesc textarea {
+    width: 100%;
+    min-height: 10rem;
+    outline: none;
+    border: none;
+}
+
+.editorPelatihan form #addTheory {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    width: 70%;
+    border: none;
+}
+
+.editorPelatihan form .moduleCont {
+    width: 100%;
+}
+
+.editorPelatihan form .moduleCont .mod {
+    width: 95%;
+    background-color: white;
+}
+
+.editorPelatihan form .moduleCont .mod .num {
+    width: 2.2rem;
+    aspect-ratio: 1;
+    background-color: var(--green-dark);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--yellow-light);
+}
+
+.editorPelatihan form .moduleCont .mod h2 {
+    font-size: 1.3rem;
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+.editorPelatihan form .moduleCont .mod input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--green-semiLight);
+}
+
+.editorPelatihan form .moduleCont .mod textarea {
+    width: 100%;
+    min-height: 10rem;
+    outline: none;
+    border: none;
+}
+
+.editorPelatihan form #subm {
+    background-color: red;
+    color: var(--yellow-light);
+    width: 70%;
+    border: none;
+}
+
+@media only screen and (min-width: 512px) {
+    .editorPelatihan {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

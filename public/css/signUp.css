@@ -75,3 +75,11 @@
     color: var(--yellow-light);
     font-weight: 600;
 }
+
+@media only screen and (min-width: 512px) {
+    .signUp {
+        min-height: 230vh;
+        width: 50%;
+        align-self: center;
+    }
+}

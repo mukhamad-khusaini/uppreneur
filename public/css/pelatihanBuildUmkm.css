@@ -1,0 +1,67 @@
+.pelatihanBuildUmkm {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.pelatihanBuildUmkm .signPelatihanBuildUmkm {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.pelatihanBuildUmkm .signPelatihanBuildUmkm h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.pelatihanBuildUmkm .moduleCont .mainCard {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--green-dark);
+    color: white;
+}
+
+.pelatihanBuildUmkm .moduleCont .mainCard img {
+    width: 4rem;
+}
+
+.pelatihanBuildUmkm .moduleCont .mainCard h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pelatihanBuildUmkm .moduleCont .mainCard p {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.pelatihanBuildUmkm .moduleCont .moduleCard {
+    width: 100%;
+    min-height: 6rem;
+    background-color: white;
+    color: var(--green-dark);
+}
+
+.pelatihanBuildUmkm .moduleCont .moduleCard a {
+    text-decoration: none;
+    color: var(--green-dark);
+}
+
+.pelatihanBuildUmkm .moduleCont .moduleCard a h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pelatihanBuildUmkm .moduleCont .moduleCard .progress-bar {
+    background-color: var(--green-dark);
+}
+
+@media only screen and (min-width: 512px) {
+    .pelatihanBuildUmkm {
+        min-height: 100vh;
+        width: 50%;
+        align-self: center;
+    }
+}

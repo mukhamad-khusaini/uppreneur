@@ -58,3 +58,19 @@
 .beranda .umkmKu p {
     font-size: 0.8rem;
 }
+
+@media only screen and (min-width: 512px) {
+    .beranda {
+        min-height: 150vh;
+        width: 60%;
+        align-self: center;
+    }
+
+    .beranda .buildUmkm {
+        width: 20rem;
+    }
+
+    .beranda .umkmKu {
+        width: 20rem;
+    }
+}

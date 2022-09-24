@@ -1,0 +1,73 @@
+.umkmkuModule {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.umkmkuModule .sign-umkmkuModule {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.umkmkuModule .sign-umkmkuModule h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.umkmkuModule .moduleTitle {
+    width: 95%;
+    height: 5rem;
+    border-radius: 0.9rem 0.9rem 0 0;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}
+
+.umkmkuModule .moduleTitle h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.umkmkuModule .moduleDesc {
+    border-radius: 0 0 0.9rem 0.9rem;
+    width: 95%;
+    background-color: white;
+}
+
+.umkmkuModule .moduleCont {
+    width: 100%;
+}
+
+.umkmkuModule .moduleCont .mod {
+    width: 95%;
+    background-color: white;
+}
+
+.umkmkuModule .moduleCont .mod .num {
+    width: 2.2rem;
+    aspect-ratio: 1;
+    background-color: var(--green-dark);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--yellow-light);
+}
+
+.umkmkuModule .moduleCont .mod h2 {
+    font-size: 1.3rem;
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+.umkmkuModule .moduleCont .mod video {
+    width: 100%;
+    height: 15rem;
+}
+
+@media only screen and (min-width: 512px) {
+    .umkmkuModule {
+        min-height: 100vh;
+        width: 50%;
+        align-self: center;
+    }
+}

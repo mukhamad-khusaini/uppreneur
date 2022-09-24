@@ -1,0 +1,100 @@
+.editorBuildUmkm {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorBuildUmkm form {
+    width: 100%;
+}
+
+.editorBuildUmkm form .alert {
+    width: 80%;
+    display: none;
+}
+
+.editorBuildUmkm form input#titleBuildUmkm {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkm form input#titleBuildUmkm::placeholder {
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.editorBuildUmkm form input[type="file"] {
+    display: none;
+}
+
+.editorBuildUmkm form input[type="date"] {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkm form #handleBuild {
+    width: 100%;
+    min-height: 20rem;
+    background-color: white;
+    border: 0.1rem solid var(--green-dark);
+    border-radius: 0.8rem;
+}
+
+.editorBuildUmkm form .imgBuildUmkmCont {
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    background-image: url("/img/no-pictures.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorBuildUmkm form .input-group {
+    width: 80%;
+}
+
+.editorBuildUmkm form > h3 {
+    font-weight: 600;
+}
+
+.editorBuildUmkm form .codex-editor .ce-paragraph {
+    text-align: left;
+}
+
+.editorBuildUmkm form .codex-editor h2 {
+    font-weight: 600;
+}
+
+form .image-tool__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form img.image-tool__image-picture {
+    width: 80%;
+}
+
+form .image-tool__caption {
+    text-align: center;
+}
+
+.editorBuildUmkm form .ce-paragraph {
+    margin-bottom: 0.7rem;
+}
+
+.editorBuildUmkm form button.editorBuildUmkmSubmit {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}
+
+@media only screen and (min-width: 512px) {
+    .editorBuildUmkm {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

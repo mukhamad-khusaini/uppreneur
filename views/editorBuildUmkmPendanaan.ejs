@@ -1,0 +1,28 @@
+<%- include("./templates/header") %>
+<div class="editorBuildUmkmPendanaan">
+    <div class="sign-editorBuildUmkmPendanaan d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Editor Pendanaan</h1>
+    </div>
+
+    <form class="d-flex flex-column align-items-center" action="/input/buildUmkm/pendanaan" method="post" enctype="multipart/form-data">
+        <div id="pendanaanBuildUmkmPamf" class="pendanaanBuildUmkmPamf mb-4"></div>
+        <input type="file" accept="image/*" name="pendanaanBuildUmkmPamflet" id="pendanaanBuildUmkmPamflet">
+
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="pendanaanBuildUmkmTitle" id="pendanaanBuildUmkmTitle" placeholder="Masukan Judul ..." required>
+        <textarea class="d-block  rounded-2 p-4 mb-4" name="pendanaanBuildUmkmDescription" id="pendanaanBuildUmkmDescription" placeholder="Deskripsi Modul ..." required></textarea>
+        <div class="skBuildUmkmCont d-flex flex-column align-items-center">
+            <h2>Syarat dan Ketentuan :</h2>
+            <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="skBuildUmkm[]" id="skBuildUmkm" placeholder="Masukan list ...">
+        </div>
+        <button type="button" onclick="addSKBuildUmkmList()" class="btn btn-danger mb-4">Tambah list</button>
+        <div class="alurBuildUmkmCont d-flex flex-column align-items-center">
+            <h2>Alur Pendaftaran :</h2>
+            <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="alurBuildUmkm[]" id="alurBuildUmkm" placeholder="Masukan list ...">
+        </div>
+        <button type="button" onclick="addAlurBuildUmkmList()" class="btn btn-danger mb-4">Tambah list</button>
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="pendanaanBuildUmkmLink" id="pendanaanBuildUmkmLink" placeholder="Masukan Link Webinar ..." required>
+        
+        <button type="submit" class="btn btn-success mb-4">Submit</button>
+    </form>
+</div>
+<%- include("./templates/footer") %>

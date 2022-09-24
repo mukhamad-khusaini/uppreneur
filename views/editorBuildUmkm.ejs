@@ -1,0 +1,34 @@
+<%- include("./templates/header") %> 
+<div class="editorBuildUmkm ">
+    <form class="d-flex flex-column align-items-center"  method="POST" id="formBuildUmkmArc" enctype="multipart/form-data">
+        <div class="alert alert-success" role="alert" id="successBuildUmkm">
+            Artikel berhasil disimpan <a href="/buildUmkm/buildUmkmWawasan" class="alert-link">kembali ke wawasan</a>
+        </div>
+        <div class="alert alert-danger" role="alert" id="failedBuildUmkm">
+            A simple danger alert—check it out!
+        </div>
+        <h3 class="mt-3">Title :</h3>
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="titleBuildUmkm" id="titleBuildUmkm" placeholder="Masukan Judul ..." required>
+        <h3>Cover here:</h3>
+        <div id="imgBuildUmkmCont" class="imgBuildUmkmCont mb-4"></div>
+        <input type="file" accept="image/*" name="coverBuildUmkmImg" id="coverBuildUmkmImg">
+        <h3>Date :</h3>
+        <input class="d-block mt-2 mb-5 px-4 py-3 rounded-2" type="date" name="buildUmkmDate" id="buildUmkmDate">
+        <h3 class="mb-2">Bidang :</h3>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01BuildUmkm">Bidang</label>
+            <select class="form-select" id="inputGroupSelect01BuildUmkm" name="bidangBuildUmkm">
+                <option value="Pemasaran" selected>Pemasaran</option>
+                <option value="Keuangan">Keuangan</option>
+                <option value="SDA">Sumber Daya Manusia</option>
+                <option value="Operasional">Operasional</option>
+            </select>
+        </div>
+
+        <div class="p-4 mb-4" id="handleBuild">
+
+        </div>
+        <button class="editorBuildUmkmSubmit btn mb-4" type="button" id="editorBuildUmkmSubmit">Submit</button>
+    </form>
+</div>
+<%- include("./templates/footer") %> 

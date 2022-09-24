@@ -1,0 +1,53 @@
+<%- include("./templates/header") %>
+<div class="umkmkuPendanaan d-flex flex-column align-items-center">
+    <div class="sign-umkmkuPendanaan d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Pendanaan UMKMKu</h1>
+    </div>
+
+    <% for( let i = 0; i < data.length; i++ ) { %>
+        <div class="card rounded-3 mb-4" >
+            <img src="<%= data[i].pamflet %>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><%= data[i].title %></h5>
+                <p class="card-text"><%= data[i].description %></p>
+                <a  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#K<%= data[i]._id.toString() %>">Info Lengkap</a>
+            </div>
+        </div>
+    
+    
+        <!-- Modal -->
+        <div class="modal fade" id="K<%= data[i]._id.toString() %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Info Lengkap</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="<%= data[i].pamflet %>" class="card-img-top" alt="...">
+                    <hr>
+                    <h5 class="btn btn-warning">Syarat dan Ketentuan :</h5>
+                    <ol>
+                        <% for( let r = 0; r < data[i].sk.length; r++ ) { %>
+                            <li ><%= data[i].sk[r] %></li>
+                        <% } %>
+                        
+                    </ol>
+                    <hr>
+                    <h5 class="btn btn-warning">Alur Pendaftaran :</h5>
+                    <ol>
+                        <% for( let r = 0; r < data[i].alur.length; r++ ) { %>
+                            <li ><%= data[i].alur[r] %></li>
+                        <% } %>
+                    </ol>
+                    <hr>
+                    <h5 class="btn btn-warning">Link Pendaftaran :</h5>
+                    <a href="<%= data[i].link %>" class="d-block"><%= data[i].link %></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+    
+</div>
+<%- include("./templates/footer") %>

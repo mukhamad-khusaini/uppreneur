@@ -1,0 +1,30 @@
+.umkmkuPendanaan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.umkmkuPendanaan .sign-umkmkuPendanaan {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.umkmkuPendanaan .sign-umkmkuPendanaan h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.umkmkuPendanaan .card {
+    width: 80%;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 512px) {
+    .umkmkuPendanaan {
+        min-height: 100vh;
+        width: 50%;
+        align-self: center;
+    }
+}

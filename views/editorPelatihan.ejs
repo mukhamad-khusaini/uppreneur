@@ -1,0 +1,50 @@
+<%- include("./templates/header") %> 
+<div class="editorPelatihan d-flex flex-column">
+    <div class="sign-editorPelatihan d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Editor Pelatihan <%= bidang %> </h1>
+    </div>
+    
+    <form class="d-flex flex-column" action="/input/umkmkuPelatihan/<%= bidang %>" method="POST">
+        <div class="moduleTitle align-self-center d-flex justify-content-center align-items-center p-3 shadow">
+            <input class="d-block  px-4 py-3 rounded-2" type="text" name="moduleTitle" id="moduleTitle" placeholder="Judul Modul" required>
+        </div>
+        <div class="moduleDesc p-4 mb-4 align-self-center shadow d-flex justify-content-center align-items-center">
+            <textarea class="d-block  rounded-2" name="moduleDesc" id="moduleDesc" placeholder="Deskripsi Modul ..." required></textarea>
+        </div>
+
+
+        <div class="moduleCont align-self-center d-flex flex-column align-items-center">
+            <!-- here input -->
+        </div>
+
+        
+        <!-- Button trigger modal -->
+        <button type="button" id="addTheory" class="btn btn-primary align-self-center mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Tambah Materi
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pilih format</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button onclick="addVideo()" class="btn btn-success d-block w-100 mb-3" type="button">Video</button>
+                    <button onclick="addText()" class="btn btn-success d-block w-100 mb-3" type="button">Text</button>
+                    <button onclick="addLink()" class="btn btn-success d-block w-100 mb-3" type="button">Link</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="subm" class="btn btn-primary align-self-center mb-4" >
+            Submit
+        </button>
+    </form>
+</div>
+<%- include("./templates/footer") %>
+

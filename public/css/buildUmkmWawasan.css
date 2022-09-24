@@ -1,0 +1,74 @@
+.buildUmkmWawasan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.buildUmkmWawasan .text h1 {
+    font-weight: 600;
+    color: var(--green-light);
+}
+
+.buildUmkmWawasan .text h2 {
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.buildUmkmWawasan .text hr {
+    border: 0.08rem solid black;
+    background-color: black;
+}
+
+.buildUmkmWawasan .containerArticle {
+    width: 100%;
+}
+
+.buildUmkmWawasan .containerArticle .art {
+    width: 80%;
+    border: 1px solid var(--green-dark);
+    background-color: var(--yellow-light);
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.buildUmkmWawasan .containerArticle .art .img {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.buildUmkmWawasan .containerArticle .art .img img {
+    width: 20rem;
+}
+
+.buildUmkmWawasan .containerArticle .art .txt .context h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+.buildUmkmWawasan .containerArticle .art .txt .context {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+.buildUmkmWawasan .containerArticle .art .txt .title a {
+    font-family: "Times New Roman", serif;
+    color: var(--green-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 512px) {
+    .buildUmkmWawasan {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+
+    .buildUmkmWawasan .containerArticle .art .img img {
+        display: block;
+        justify-self: center;
+        width: 30rem;
+    }
+}

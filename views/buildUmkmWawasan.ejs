@@ -1,0 +1,27 @@
+<%- include("./templates/header") %> 
+<div class="buildUmkmWawasan d-flex flex-column align-items-center">
+    <div class="text my-4">
+        <h1 class="text-center m-0">Build Umkm Wawasan</h1>
+        <hr class="m-1">
+        <h2 class="text-center"><%= param.toUpperCase() %></h2>
+    </div>
+    <div class="containerArticle d-flex flex-column align-items-center">
+        <% for( let i = 0; i < datas.length; i++ ) { %>
+            <div class="art mb-5">
+                <div class="img">
+                    <img src="<%=  datas[i].coverImg %>" alt="tim berners">
+                </div>
+                <div class="txt">
+                    <div class="context d-flex justify-content-between p-3">
+                        <h4 class="m-0"><%= datas[i].bidang.toUpperCase() %></h4>
+                        <h4 class="m-0"><%= new Date(datas[i].date).toLocaleString('id-ID', { day: 'numeric', year: 'numeric', month: 'long',  }) %></h4>
+                    </div>
+                    <div class="title d-flex justify-content-center align-items-center p-3">
+                        <a href="<%= `/buildUmkm/articleWawasanBuildUmkm/${datas[i]._id.toString()}` %>" class="m-0"><%= datas[i].title %></a> 
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>  
+<%- include("./templates/footer") %> 

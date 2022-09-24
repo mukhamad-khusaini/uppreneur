@@ -1,0 +1,107 @@
+.editorBuildUmkmPelatihan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorBuildUmkmPelatihan .sign-editorBuildUmkmPelatihan {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.editorBuildUmkmPelatihan .sign-editorBuildUmkmPelatihan h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.editorBuildUmkmPelatihan form {
+    width: 100%;
+}
+
+.editorBuildUmkmPelatihan form .moduleTitle {
+    width: 95%;
+
+    border-radius: 0.9rem 0.9rem 0 0;
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+}
+
+.editorBuildUmkmPelatihan form .moduleTitle input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.editorBuildUmkmPelatihan form .moduleDesc {
+    border-radius: 0 0 0.9rem 0.9rem;
+    width: 95%;
+    background-color: white;
+}
+
+.editorBuildUmkmPelatihan form .moduleDesc textarea {
+    width: 100%;
+    min-height: 10rem;
+    outline: none;
+    border: none;
+}
+
+.editorBuildUmkmPelatihan form #addBuildUmkmTheory {
+    background-color: var(--green-dark);
+    color: var(--yellow-light);
+    width: 70%;
+    border: none;
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont {
+    width: 100%;
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont .mod {
+    width: 95%;
+    background-color: white;
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont .mod .num {
+    width: 2.2rem;
+    aspect-ratio: 1;
+    background-color: var(--green-dark);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--yellow-light);
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont .mod h2 {
+    font-size: 1.3rem;
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont .mod input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--green-semiLight);
+}
+
+.editorBuildUmkmPelatihan form .moduleBuildUmkmCont .mod textarea {
+    width: 100%;
+    min-height: 10rem;
+    outline: none;
+    border: none;
+}
+
+.editorBuildUmkmPelatihan form #subm {
+    background-color: red;
+    color: var(--yellow-light);
+    width: 70%;
+    border: none;
+}
+
+@media only screen and (min-width: 512px) {
+    .editorBuildUmkmPelatihan {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

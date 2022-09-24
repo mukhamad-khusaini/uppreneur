@@ -90,3 +90,11 @@ form .image-tool__caption {
     background-color: var(--green-dark);
     color: var(--yellow-light);
 }
+
+@media only screen and (min-width: 512px) {
+    .editor {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

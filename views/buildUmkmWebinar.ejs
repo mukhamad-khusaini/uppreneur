@@ -1,0 +1,17 @@
+<%- include("./templates/header") %> 
+<div class="buildUmkmWebinar d-flex flex-column align-items-center">
+    <h1 class="my-5">Build UMKM Webinar</h1>
+
+    <% for( let i = 0; i < data.length; i++ ) { %>
+        <div class="card rounded-3 shadow mb-5" style="width: 18rem;">
+            <img src="<%= data[i].pamflet %>" class="card-img-top" alt="">
+            <div class="card-body">
+                <h3 class="card-title"><%= data[i].title %></h3>
+                <p class="card-text"><%= data[i].description %></p>
+                <a href="<%= data[i].link %>" class="btn btn-success">Join</a>
+                <p class="date d-inline ms-3"><%= new Date(data[i].date).toLocaleString("id-ID") %></p>
+            </div>
+        </div>
+    <% } %>
+</div>
+<%- include("./templates/footer") %> 

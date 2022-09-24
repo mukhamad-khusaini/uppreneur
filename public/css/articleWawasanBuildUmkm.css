@@ -1,0 +1,81 @@
+.articleWawasanBuildUmkm {
+    min-height: 50rem;
+    font-family: "poppins", sans-serif;
+}
+
+.articleWawasanBuildUmkm .signBuildUmkm {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.articleWawasanBuildUmkm .signBuildUmkm h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.articleWawasanBuildUmkm .innerArc .title {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.articleWawasanBuildUmkm .innerArc .bidang {
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--green-semiLight);
+    color: var(--yellow-light);
+}
+
+.articleWawasanBuildUmkm .innerArc .tanggal {
+    font-size: 0.8rem;
+    color: var(--green-dark);
+}
+
+.articleWawasanBuildUmkm .innerArc hr {
+    border-top: 0.2rem dotted black;
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc img {
+    width: 20rem;
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc .caption {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc h2 {
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc h3 {
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc h4 {
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.articleWawasanBuildUmkm .innerArc .theArc h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 512px) {
+    .articleWawasanBuildUmkm {
+        min-height: 100vh;
+        width: 50%;
+        align-self: center;
+    }
+    .articleWawasanBuildUmkm .innerArc {
+        width: 100%;
+    }
+}

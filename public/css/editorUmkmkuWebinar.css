@@ -1,0 +1,76 @@
+.editorUmkmkuWebinar {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorUmkmkuWebinar .sign-editorUmkmkuWebinar {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.editorUmkmkuWebinar .sign-editorUmkmkuWebinar h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.editorUmkmkuWebinar form {
+    width: 100%;
+}
+
+.editorUmkmkuWebinar form .webinarPamf {
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    background-image: url("/img/no-pictures.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorUmkmkuWebinar form input[type="file"] {
+    display: none;
+}
+
+.editorUmkmkuWebinar form input#webinarTitle {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuWebinar form textarea {
+    width: 80%;
+    min-height: 10rem;
+    outline: none;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorUmkmkuWebinar form input#date {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuWebinar form input#webinarLink {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorUmkmkuWebinar form button {
+    background-color: var(--green-dark);
+    border: none;
+    width: 80%;
+}
+
+@media only screen and (min-width: 512px) {
+    .editorUmkmkuWebinar {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

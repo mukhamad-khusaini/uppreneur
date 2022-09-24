@@ -1,0 +1,28 @@
+<%- include("./templates/header") %>
+<div class="editorUmkmkuPendanaan">
+    <div class="sign-editorUmkmkuPendanaan d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Editor Pendanaan</h1>
+    </div>
+
+    <form class="d-flex flex-column align-items-center" action="/input/pendanaan" method="post" enctype="multipart/form-data">
+        <div id="pendanaanUmkmkuPamf" class="pendanaanUmkmkuPamf mb-4"></div>
+        <input type="file" accept="image/*" name="pendanaanUmkmkuPamflet" id="pendanaanUmkmkuPamflet">
+
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="pendanaanTitle" id="pendanaanTitle" placeholder="Masukan Judul ..." required>
+        <textarea class="d-block  rounded-2 p-4 mb-4" name="pendanaanDescription" id="pendanaanDescription" placeholder="Deskripsi Modul ..." required></textarea>
+        <div class="skCont d-flex flex-column align-items-center">
+            <h2>Syarat dan Ketentuan :</h2>
+            <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="sk[]" id="sk" placeholder="Masukan list ...">
+        </div>
+        <button type="button" onclick="addSKList()" class="btn btn-danger mb-4">Tambah list</button>
+        <div class="alurCont d-flex flex-column align-items-center">
+            <h2>Alur Pendaftaran :</h2>
+            <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="alur[]" id="alur" placeholder="Masukan list ...">
+        </div>
+        <button type="button" onclick="addAlurList()" class="btn btn-danger mb-4">Tambah list</button>
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="pendanaanLink" id="pendanaanLink" placeholder="Masukan Link Webinar ..." required>
+        
+        <button type="submit" class="btn btn-success mb-4">Submit</button>
+    </form>
+</div>
+<%- include("./templates/footer") %>

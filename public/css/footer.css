@@ -25,3 +25,9 @@ footer .foot div img {
 footer .foot div p {
     margin: 0;
 }
+
+@media only screen and (min-width: 512px) {
+    footer .foot {
+        background-size: 160rem;
+    }
+}

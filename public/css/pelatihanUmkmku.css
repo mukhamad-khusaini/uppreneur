@@ -44,11 +44,24 @@
     color: var(--green-dark);
 }
 
-.pelatihanUmkmku .moduleCont .moduleCard h1 {
+.pelatihanUmkmku .moduleCont .moduleCard a {
+    text-decoration: none;
+    color: var(--green-dark);
+}
+
+.pelatihanUmkmku .moduleCont .moduleCard a h1 {
     font-size: 1rem;
     font-weight: 600;
 }
 
 .pelatihanUmkmku .moduleCont .moduleCard .progress-bar {
     background-color: var(--green-dark);
+}
+
+@media only screen and (min-width: 512px) {
+    .pelatihanUmkmku {
+        min-height: 100vh;
+        width: 50%;
+        align-self: center;
+    }
 }

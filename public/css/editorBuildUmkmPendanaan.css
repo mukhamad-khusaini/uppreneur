@@ -1,0 +1,100 @@
+.editorBuildUmkmPendanaan {
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+
+.editorBuildUmkmPendanaan .sign-editorBuildUmkmPendanaan {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--green-semiLight);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.editorBuildUmkmPendanaan .sign-editorBuildUmkmPendanaan h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--yellow-light);
+}
+
+.editorBuildUmkmPendanaan form {
+    width: 100%;
+}
+
+.editorBuildUmkmPendanaan form .pendanaanBuildUmkmPamf {
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    background-image: url("/img/no-pictures.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorBuildUmkmPendanaan form input[type="file"] {
+    display: none;
+}
+
+.editorBuildUmkmPendanaan form input#pendanaanBuildUmkmTitle {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkmPendanaan form textarea {
+    width: 80%;
+    min-height: 10rem;
+    outline: none;
+    border: 0.1rem solid var(--green-dark);
+}
+
+.editorBuildUmkmPendanaan form .skBuildUmkmCont {
+    width: 100%;
+}
+
+.editorBuildUmkmPendanaan form .skBuildUmkmCont h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.editorBuildUmkmPendanaan form .skBuildUmkmCont input#skBuildUmkm {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkmPendanaan form .alurBuildUmkmCont {
+    width: 100%;
+}
+
+.editorBuildUmkmPendanaan form .alurBuildUmkmCont h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.editorBuildUmkmPendanaan form .alurBuildUmkmCont input#alurBuildUmkm {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkmPendanaan form input#pendanaanBuildUmkmLink {
+    width: 80%;
+    border: 0.1rem solid var(--green-dark);
+    outline: none;
+}
+
+.editorBuildUmkmPendanaan form button {
+    background-color: var(--green-dark);
+    border: none;
+    width: 80%;
+}
+
+@media only screen and (min-width: 512px) {
+    .editorBuildUmkmPendanaan {
+        min-height: 200vh;
+        width: 50%;
+        align-self: center;
+    }
+}

@@ -5,42 +5,24 @@
     </div>
     <div class="moduleCont d-flex flex-column align-items-center px-3">
         <div class="mainCard rounded-4 d-flex align-items-center p-3 mb-2 shadow">
-            <img class="mx-3" src="/img/money.png" alt="money">
+            <img class="mx-3" src="/img/<%= bidang %>.png" alt="<%= bidang %>">
             <div class="mainCardText">
-                <h1 class="mb-1">Pelatihan Keuangan</h1>
-                <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ratione nisi id est</p>
+                <h1 class="mb-1">Pelatihan <%= bidang %> </h1>
+                <p class="m-0">Pada bagian ini akan diberikan modul-modul dalam bidang <%= bidang %></p>
             </div>
         </div>
-        <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
-            <h1>Fundamental Keuangan</h1>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+
+        <% for( let i = 0; i < result.length; i++ ) { %> 
+            <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
+                <a href="/umkmku/pelatihanUmkmku/<%= bidang %>/module/<%= result[i]._id %>"><h1><%= result[i].data.moduleTitle %></h1></a>
+                <!-- <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div> -->
             </div>
-        </div>
-        <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
-            <h1>Manajemen Keuangan</h1>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-            </div>
-        </div>
-        <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
-            <h1>Keuangan Rumah Tangga</h1>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-            </div>
-        </div>
-        <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
-            <h1>Keuangan Perusahaan</h1>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-            </div>
-        </div>
-        <div class="moduleCard rounded-4 my-2 p-4 d-flex flex-column justify-content-center shadow">
-            <h1>Manajemen Keuangan Perusahaan Syariah</h1>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-            </div>
-        </div>
+        <% } %>
+        
+        
     </div>
 </div>
 <%- include("./templates/footer") %> 
+

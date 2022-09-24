@@ -1,0 +1,18 @@
+<%- include("./templates/header") %> 
+<div class="editorUmkmkuWebinar">
+    <div class="sign-editorUmkmkuWebinar d-flex align-items-center justify-content-center mb-4">
+        <h1 class="m-0">Editor Webinar</h1>
+    </div>
+    <form class="d-flex flex-column align-items-center" action="/input/webinar" method="post" enctype="multipart/form-data">
+        <div id="webinarPamf" class="webinarPamf mb-4"></div>
+        <input type="file" accept="image/*" name="pamflet" id="pamflet">
+
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="webinarTitle" id="webinarTitle" placeholder="Masukan Judul ..." required>
+        <textarea class="d-block  rounded-2 p-4 mb-4" name="webinarDescription" id="webinarDescription" placeholder="Deskripsi Modul ..." required></textarea>
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="datetime-local" name="date" id="date">
+        <input class="d-block mt-2 mb-4 px-4 py-3 rounded-2" type="text" name="webinarLink" id="webinarLink" placeholder="Masukan Link Webinar ..." required>
+        
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+<%- include("./templates/footer") %> 
